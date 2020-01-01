@@ -16,6 +16,11 @@ public class Bird implements Animal {
 		return 0;
 	}
 	
+	public int swim() {
+		System.out.println("I am not swiming");
+		return -1;
+	}
+	
 	@Test
 	public void testBird() {
 		Bird obj = new Bird();
@@ -23,5 +28,6 @@ public class Bird implements Animal {
 		assertEquals(obj.walk(), 0);
 		assertEquals(obj.fly(), 0);
 		assertEquals(obj.sing(), 0);
+		assertEquals(obj.swim(), -1);
 	}
 }

@@ -16,4 +16,5 @@ public interface Animal {
 	
 	public int fly();
 	public int sing();
+	public int swim();
 }
